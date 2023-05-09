@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike-React</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -20,7 +28,13 @@
                         vorange: '#FA804C',
                         bulue: '#3D4FF3',
                         main: '#E5E5E5',
-                    }
+                        pad: '#F1F1F1'
+                    },
+                    fontFamily: {
+                        'bebas': ['"Bebas Neue"', 'cursive'],
+                        'poppins': ['"Poppins"', 'sans-serif'],
+                    },
+
                 }
             }
         }
@@ -28,7 +42,7 @@
 
 </head>
 
-<body>
+<body class="bg-main font-poppins">
     <header class="bg-heads">
         <nav class="flex mx-24 h-20 px-5 items-center justify-between">
             <div class="">
@@ -49,33 +63,43 @@
                 <img class="w-5/6 sm:w-full" src="images/banner.png" alt="">
             </div>
             <div class="space-y-16">
-                <h1 class="text-2xl sm:text-5xl uppercase font-bold">
+                <h1 class="text-2xl sm:text-5xl uppercase font-bebas">
                     <span class="text-vorange">Nike React</span>
                     <br>
                     <span>Infinity Run 2</span>
-            
+
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,</p>
-                <button class="uppercase  bg-gradient-to-b from-bulue to-blue-800 py-4 px-7 rounded-xl text-white font-semibold">
+                <button
+                    class="uppercase  bg-gradient-to-b from-bulue to-blue-800 py-4 px-7 rounded-xl text-white font-semibold">
                     <img src="icons/shopping-cart 1.png" class="h-6 w-6 inline" alt="" srcset="">
                     Buy Now </button>
             </div>
         </section>
     </header>
-    <main class="container mx-auto bg-main">
+    <main class="container mx-auto ">
         <!-- Casual Shoes -->
         <section>
-            <h2 class="text-5xl font-bold">
+            <h2 class="text-5xl font-bebas">
                 Casual Shoes
             </h2>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 ">
                 <!-- C_Shoe_1 -->
-                <div>
+                <div class="p-4 shadow-lg rounded-xl bg-white">
 
-                    <div>
-                        <img src="images/" alt="" srcset="">
+                    <div class="p-5 bg-pad rounded-2xl ">
+                        <img src="images/image 5.png" alt="" srcset="">
                     </div>
+                    <h3 class="text-3xl font-semibold mt-3">Nike Air max</h3>
+                    <p class="mt-6 space-y-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolores!</p>
+                    <div>
+                        <h2 class="text-5xl font-bold ">$234</h2>
+                        <button
+                            class="uppercase  bg-gradient-to-b from-bulue to-blue-800 py-4 px-7 rounded-xl text-white font-semibold">
+                            <img src="icons/shopping-cart 1.png" class="h-6 w-6 inline" alt="" srcset="">
+                            Buy Now </button>
 
+                    </div>
                 </div>
             </div>
         </section>
